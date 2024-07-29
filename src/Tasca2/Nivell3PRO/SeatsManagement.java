@@ -1,8 +1,5 @@
 package Tasca2.Nivell3PRO;
 
-
-import Tasca2.Nivell3ENG.ExceptionTakenSeat;
-
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -10,10 +7,12 @@ public class SeatsManagement {
     private ArrayList<Seat> seats;
 
     public SeatsManagement() {
+
         seats = new ArrayList<Seat>();
     }
 
     public ArrayList<Seat> getSeats() {
+
         return seats;
     }
 
@@ -36,4 +35,13 @@ public class SeatsManagement {
         }
         return seatIndex;
     }
+    public void clearSeat(int row, int seatNumber) throws ExceptionEmptySeat {
+        int foundSeatIndex = searchSeat(row, seatNumber);
+        if (foundSeatIndex < 0) {
+            throw new ExceptionEmptySeat("El asiento seleccionado no se encuentra ocupado.");
+        }
+        seats.remove(foundSeatIndex);
+        System.out.println("Reserva eliminada satisfactoriamente.");
+    }
+
 }
