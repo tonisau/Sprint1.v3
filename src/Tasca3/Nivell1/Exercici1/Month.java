@@ -1,4 +1,4 @@
-package Tasca3.Nivell1;
+package Tasca3.Nivell1.Exercici1;
 
 import java.util.Objects;
 

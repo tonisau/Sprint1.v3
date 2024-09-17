@@ -1,18 +1,34 @@
-package Tasca3.Nivell1;
+package Tasca3.Nivell1.Exercici1;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Main {
     public static void main (String[] args){
         ArrayList<Month> months=createMonthsArray();
         System.out.println("ArrayList sin agosto: \n"+ months + "\n");
 
+        for (int i = 0; i < months.size(); i++) {
+            System.out.println(months.get(i).getName());
+        }
+
         months.add(7, new Month("agosto"));
-        System.out.println("ArrayList con agosto: \n"+ months) ;
+        System.out.println("\n ArrayList con agosto: \n"+ months) ;
 
         HashSet<Month> monthsSet = createHashSet(months);
 
+        months.forEach(month->System.out.println(month.getName()));
+
+
+        System.out.println("\n Iterator con agosto: \n"+ months) ;
+
+        Iterator<Month> iterador =months.iterator();
+        // Usar el iterador para recorrer la lista
+        while (iterador.hasNext()) {
+            Month month = iterador.next();
+            System.out.println(month.getName());
+        }
     }
 
 
