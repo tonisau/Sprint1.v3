@@ -1,6 +1,6 @@
 package Tasca7.Nivell2ENG.n2exercici1;
 
-import com.google.gson.Gson;
+import ºº
 
 import java.io.FileWriter;
 import java.io.IOException;
