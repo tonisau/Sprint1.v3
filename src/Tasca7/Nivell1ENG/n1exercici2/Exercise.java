@@ -2,8 +2,8 @@ package Tasca7.Nivell1ENG.n1exercici2;
 
 public class Exercise {
 	public static void main(String[] args) {
-		WorkerOnline onlineWorker = new WorkerOnline("Ana", "Rodriguez", 9);
-		WorkerInPerson inPersonWorker = new WorkerInPerson("Jamie", "Adams", 9);
+		WorkerOnline onlineWorker = new WorkerOnline("Marina", "Rodriguez", 9);
+		WorkerInPerson inPersonWorker = new WorkerInPerson("Alejandro", "Gonzalez", 9);
 
 		makePhoneCallPrank(onlineWorker);
 		makePrank(inPersonWorker);

@@ -7,11 +7,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		ArrayList<String> array1 = new ArrayList<String>();
-		array1.add("hola");
-		array1.add("que");
-		array1.add("tal");
-		array1.add("hasta");
-		array1.add("luegooo");
+		array1.add("Hi");
+		array1.add("How");
+		array1.add("are");
+		array1.add("you");
+		array1.add("?");
 		
 		System.out.println("Array original: " + array1);
 		
