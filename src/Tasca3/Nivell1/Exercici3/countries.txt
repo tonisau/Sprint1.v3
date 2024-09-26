@@ -1,0 +1,6 @@
+Spain,Madrid
+France,Paris
+Germany,Berlin
+Italy,Roma
+Portugal,Lisboa
+...

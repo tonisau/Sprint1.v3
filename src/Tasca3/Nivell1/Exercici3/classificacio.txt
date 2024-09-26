@@ -1,0 +1,2 @@
+toni: 7 puntos
+pedro: 3 puntos
